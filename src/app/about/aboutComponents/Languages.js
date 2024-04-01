@@ -1,0 +1,35 @@
+import React from "react";
+import Card from "./Card";
+import Reveal from "@/app/components/animations/Reveal";
+
+
+
+const Languages = () => {
+  return (
+    <main >
+     
+      {/* main education */}
+      <div className="flex flex-col space-y-32">
+        <Reveal >
+        <div>
+          <div className="flex flex-col  items-center text-center text-white space-y-3 justify-center ">
+            <h1 className="text-4xl">Linguistic Skills</h1>
+            <p className="text-xl ">Explore my Linguistic Journey:</p>
+          </div>
+        </div>
+        </Reveal>
+        <div>
+          {/* 2 main  */}
+          <div>
+            <div className="flex md:flex-row flex-col justify-center items-center space-x-0 md:space-x-3  space-y-3 md:space-y-0">
+              <Card index={1} title={"English"}  description={"Laid the foundation for learning and communication at Jamia Masjid Gulzar Madina."}  year={2020} />
+              <Card index={2} title={"Arabic"}  description={"Strengthened my academic Arabic proficiency at Jamia Masjid Gulzar Madina."}  year={2022} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Languages;
